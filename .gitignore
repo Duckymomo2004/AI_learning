@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Project outputs
+*.pt
+*.pth
+*.tar
+runs/
+wandb/
+
+# Local tool state
+.codex/
+
+# Data
+data/*
+!data/.gitkeep
