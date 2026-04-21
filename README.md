@@ -1,7 +1,5 @@
-# PyTorch Vision Notebook Refactor
-
-This repository reorganizes the original Jupyter notebooks into reusable PyTorch modules. Model code lives in `model/`, training loops live in `trainer/`, dataset code lives in `dataloader/`, and each model family has its own runnable script in `experiments/`.
-
+# State of the art Image Classification models 
+This repo inclucdes implemetation of some state of the art model specifically in image classification tasks
 ## Requirements
 
 - Python
@@ -92,15 +90,11 @@ Each script saves its checkpoint as `best.pt` inside its own experiment folder.
 
 ## Notebook Training And Testing Summary
 
-The table below summarizes the saved outputs found in the original notebooks. These numbers come from the notebook files themselves.
-
-| Notebook | Model | Data | Saved result |
-| --- | --- | --- | --- |
-| `cbam-resnet.ipynb` | `ResNet50 + CBAM` | `CIFAR-10` | Best test accuracy `0.8492`, best test loss `0.4921`, trained for `20` epochs |
-| `mlpmixer.ipynb` | `MLPMixer` | `CIFAR-10` | Best test accuracy `0.8237`, best test loss `0.9572`, trained for `100` epochs |
-| `mobile-nets-v1-to-v3.ipynb` | `MobileNetV1` | `ImageFolder` face-expression data | Final epoch: train acc `0.9515`, test acc `0.5745`, train loss `0.1465`, test loss `2.8234` |
-| `mobile-nets-v1-to-v3.ipynb` | `MobileNetV2` | `ImageFolder` face-expression data | Final epoch: train acc `0.8483`, test acc `0.5730`, train loss `0.4270`, test loss `1.5417` |
-| `mobile-nets-v1-to-v3.ipynb` | `MobileNetV3` | `ImageFolder` face-expression data | Final epoch: train acc `0.8354`, test acc `0.5553`, train loss `0.4689`, test loss `1.5849` |
-| `relation-net.ipynb` | `RelationNet` | `MiniImageNet` episodic data (`5-way`, `1-shot`, `15` query, `84x84`) | Best test accuracy `0.5104`, best test loss `52.5273`, trained for `50` epochs |
-| `cosine-transformer.ipynb` | `FewShotTransformer` | `MiniImageNet` episodic JSON splits | Model and data-preparation code are present, but the saved notebook output does not include final training or testing logs |
-| `cosine-transformer.ipynb` | `CTX` | `MiniImageNet` episodic JSON splits | Model and data-preparation code are present, but the saved notebook output does not include final training or testing logs |
+|  Model | Data | Saved result |
+|  --- | --- | --- |
+| `ResNet50 + CBAM` | `CIFAR-10` | Best test accuracy `0.8492`, best test loss `0.4921`, trained for `20` epochs |
+|  `MLPMixer` | `CIFAR-10` | Best test accuracy `0.8237`, best test loss `0.9572`, trained for `100` epochs |
+|  `MobileNetV1` | `ImageFolder` face-expression data | Final epoch: train acc `0.9515`, test acc `0.5745`, train loss `0.1465`, test loss `2.8234` |
+|`MobileNetV2` | `ImageFolder` face-expression data | Final epoch: train acc `0.8483`, test acc `0.5730`, train loss `0.4270`, test loss `1.5417` |
+| `MobileNetV3` | `ImageFolder` face-expression data | Final epoch: train acc `0.8354`, test acc `0.5553`, train loss `0.4689`, test loss `1.5849` |
+|  `RelationNet` | `MiniImageNet` episodic data (`5-way`, `1-shot`, `15` query, `84x84`) | Best test accuracy `0.5104`, best test loss `52.5273`, trained for `50` epochs |
