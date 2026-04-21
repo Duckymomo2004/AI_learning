@@ -23,7 +23,7 @@ wandb/
 
 # Local tool state
 .codex/
-
+.codex
 # Data
 data/*
 !data/.gitkeep

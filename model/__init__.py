@@ -1,3 +1,16 @@
+from .cbam_resnet import (
+    BasicBlock,
+    Bottleneck,
+    CBAMResNet,
+    ChannelAttention,
+    ResNet,
+    SpatialAttention,
+    resnet18_cbam,
+    resnet34_cbam,
+    resnet50_cbam,
+    resnet101_cbam,
+    resnet152_cbam,
+)
 from .cosine_transformer import Attention, CTX, FewShotTransformer, MetaTemplate
 from .fewshot_backbones import (
     BACKBONE_REGISTRY,
@@ -17,7 +30,11 @@ from .relation_net import EmbeddingModule, RelationNet, RelationModule
 __all__ = [
     "Attention",
     "BACKBONE_REGISTRY",
+    "BasicBlock",
+    "Bottleneck",
+    "CBAMResNet",
     "CTX",
+    "ChannelAttention",
     "Conv4",
     "Conv4NP",
     "Conv6",
@@ -31,9 +48,16 @@ __all__ = [
     "MobileNetV1",
     "MobileNetV2",
     "MobileNetV3",
+    "ResNet",
     "RelationModule",
     "RelationNet",
     "ResNet12",
     "ResNet18",
     "ResNet34",
+    "SpatialAttention",
+    "resnet18_cbam",
+    "resnet34_cbam",
+    "resnet50_cbam",
+    "resnet101_cbam",
+    "resnet152_cbam",
 ]
